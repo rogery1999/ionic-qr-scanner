@@ -1,0 +1,11 @@
+<ion-content [fullscreen]="true" [style.--background]="scanning ? '#00000000' : '#fff'">
+    <ion-button *ngIf="!scanning" class="btn-middle" (click)="startScan()" shape="round" fill="outline">
+        Scanning
+    </ion-button>
+    <!-- <div class="main-container">
+        <ion-button *ngIf="scanning" class="btn-end" (click)="closeScanner()" expand="full">
+            Close Scanner
+        </ion-button>
+    </div> -->
+    <div *ngIf="scanning" class="scan-box"></div>
+</ion-content>
